@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        gap: 8px;
+        border: 1px solid;
+        border-radius: 6px;
+    }
+
+    body {
+        margin: 20px;
+        background-color:rgb(222, 234, 233);
+    }
+
+    .mainbox {
+        border: solid 1 px;
+        display: block;
+        background-color:hsl(216, 82%, 9%);
+        width: 100%;
+        gap: 10px;
+    }
+
+    .upperbox {
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        width: 99%;
+        background-color: rgb(149, 62, 196);
+    }
+
+
+    .box1 {
+        height: 200px;
+        width: 250px;
+        background-color:#34e654;
+        display: flex;
+    }
+
+    .col {
+        background-color: pink;
+    }
+
+    .row {
+        background-color:#62ee6e;
+    }
+
+    #box1-col1 {
+        display: flex;
+
+        align-self: flex-end;
+        height: 15%;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .box2 {
+        height: 200px;
+        width: 300px;
+        background-color:#34e654;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #box2-col1 {
+        display: flex;
+        height: 90%;
+        width: 20%;
+        margin: 10px;
+        align-items: start;
+    }
+    #box2row {
+        display: flex;
+        height: 35px;
+        width: 35px;
+        margin: 12px;
+    }
+
+    #box2-col2 {
+        display: flex;
+        height: 90%;
+        width: 15%;
+        margin: 10px;
+    }
+
+    #box2-col3 {
+        display: flex;
+        height: 90%;
+        width: 15%;
+        margin: 10px;
+    }
+
+    .bottombox{
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        width: 99%;
+        justify-content: center;
+        background-color: rgb(149, 62, 196);
+    }
+
+    .box3 {
+        height: 300px;
+        width: 200px;
+        background-color:#34e654;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #box3-col1 {
+        display: flex;
+        align-self: flex-start;
+        height: 13%;
+        width: 90%;
+        margin: 10px;
+    }
+
+    #box3-col2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: flex-end;
+        height: 50%;
+        width: 90%;
+        margin: 10px;
+    }
+
+    #box3-row1 {
+        display: flex;
+        height: 35px;
+        width: 90%;
+        margin: 12px;
+    }
+
+    #box3-row2 {
+        display: flex;
+        height: 35px;
+        width: 90%;
+        margin: 12px;
+    }
+    .box4 {
+        height: 300px;
+        width:500px;
+        background-color:#34e654;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #box4-col1 {
+        display: flex;
+        align-self:last baseline;
+        height: 50%;
+        width: 99%;
+        margin: 8px ;
+    }
+
+    #box4-row1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        height: 90%;
+        width: 30%;
+        margin: 10px;
+    }
+
+    #box4-col2 { 
+        display: flex;
+        height: 35px;
+        width: 90%;
+        align-self: baseline;
+        margin: 10px;
+    }
+
+    
+</style>
+
+<body>
+    <div class="mainbox">
+        <div class="upperbox">
+            <div class="box1">
+                <div class="col " id="box1-col1"></div>
+            </div>
+            <div class="box2">
+                <div class="col " id="box2-col1">
+                    <div class="row" id="box2-row"></div>
+                </div>
+                <div class="col" id="box2-col2"></div>
+                <div class="col" id="box2-col3"></div>
+            </div>
+        </div>
+        <div class="bottombox">
+            <div class="box3">
+                <div class="col" id="box3-col1"></div>
+                <div class="col" id="box3-col2">
+                    <div class="row" id="box3-row1"></div>
+                    <div class="row" id="box3-row2"></div>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="col" id="box4-col1">
+                    <div class="row" id="box4-row1">
+                        <div class="col" id="box4-col2"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+</body>
+
+</html>

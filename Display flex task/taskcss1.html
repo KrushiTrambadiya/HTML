@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+            }
+        .row{
+            display: flex;
+            width: 80%;
+             margin: auto;
+            background-color: #42842f;
+            border: 1px solid;
+            gap: 5px;
+        }
+        .flex-g-1{
+             background-color: #0c24d7;
+             flex-grow: 1;
+            }
+        .h-1{
+            height: 200px;
+         }
+        .flex-g-2{
+             background-color: #ea0f8f;
+              flex-grow: 1;
+            }
+        .flex-g-5{
+             background-color: hsl(198, 90%, 45%);
+              flex-grow: 5;
+            }
+        .h-50{
+             height: 50px;
+              align-content: center;
+               text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="row h-1">
+        <div class="flex-g-2">confused</div>
+        <div class="flex-g-1">happy</div>
+        <div class="flex-g-5">joyful</div>
+    </div>
+    <div class="row">
+        <div class="flex-g-5 h-50">joyful</div>
+        <div class="flex-g-2 h-50">confused</div>
+        <div class="flex-g-1 h-50">happy</div>
+    </div>
+
+</body>
+</html>
