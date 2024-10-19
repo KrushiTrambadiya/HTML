@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table><thead><tr><th style="text-align: center;"><span>Property</span></th><th style="text-align: center;"><span>Description</span></th></tr></thead><tbody><tr><td><a href="https://www.geeksforgeeks.org/css-colors" rel="noopener" target="_blank"><span>text-color</span></a></td><td><span>Sets the color of the text using color name, hex value, or RGB value.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-align-property" rel="noopener" target="_blank"><span>text-align</span></a></td><td><span>Specifies horizontal alignment of text in a block or table-cell element.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-align-last-property" rel="noopener" target="_blank"><span>text-align-last</span></a></td><td><span>Sets alignment of last lines occurring in an element.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-decoration-style-property" rel="noopener" target="_blank"><span>text-decoration</span></a></td><td><span>Decorates text content.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-decoration-color-property" rel="noopener" target="_blank"><span>text-decoration-colo</span></a><span>r</span></td><td><span>Sets color of text decorations like overlines, underlines, and line-throughs.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-decoration-line-property" rel="noopener" target="_blank"><span>text-decoration-line</span></a></td><td><span>Sets various text decorations like underline, overline, line-through.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-decoration-style-property" rel="noopener" target="_blank"><span>text-decoration-style</span></a></td><td><span>Combines text-decoration-line and text-decoration-color properties.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-indent-property" rel="noopener" target="_blank"><span>text-indent</span></a></td><td><span>Indents first line of paragraph.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-justify-property" rel="noopener" target="_blank"><span>text-justify</span></a></td><td><span>Justifies text by spreading words into complete lines.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-overflow-property" rel="noopener" target="_blank"><span>text-overflow</span></a></td><td><span>Specifies hidden overflow text.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-transform-property" rel="noopener" target="_blank"><span>text-transform</span></a></td><td><span>Controls capitalization of text.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-text-shadow-property" rel="noopener" target="_blank"><span>text-shadow</span></a></td><td><span>Adds shadow to text.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-letter-spacing-property" rel="noopener" target="_blank"><span>letter-spacing</span></a></td><td><span>Specifies space between characters of text.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-line-height-property" rel="noopener" target="_blank"><span>line-height</span></a></td><td><span>Sets space between lines.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-direction-property" rel="noopener" target="_blank"><span>direction</span></a></td><td><span>Sets text direction.</span></td></tr><tr><td><a href="https://www.geeksforgeeks.org/css-word-spacing-property" rel="noopener" target="_blank"><span>word-spacing</span></a></td><td><span>Specifies space between words of line.</span></td></tr></tbody></table>
+
+    <h2 style="color: brown;">Text color</h2>
+    <style> 
+    .box{ margin-left: 50px; padding: 5px;border: 2px solid ; width: 200px; box-shadow: 1px 1px 5px grey;} 
+    p[class*="text"]:hover{box-shadow: 3px 3px 10px grey;} 
+    .box:hover{box-shadow: 3px 3px 10px grey;} 
+    .text-center{ text-align: center; } 
+    .text-start{ text-align:start; } 
+    .text-end{ text-align:end; } 
+    .text-justify{ text-align:justify; } 
+    .text-left{ text-align:left; } 
+    .text-right{ text-align:right; } 
+    .underline{ text-decoration: underline; } 
+    .line-through{ text-decoration: line-through; } 
+    .overline{ text-decoration: overline; } 
+    .text-indent{ text-indent: 100px; } 
+    .white-space { width: 1300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .text-cap { text-transform: capitalize; }
+    .text-up { text-transform: uppercase; }
+    .text-low { text-transform: lowercase; }
+    .text-shadow { text-shadow: 3px 3px 5px olive; }
+    .letter-spacing { letter-spacing: 5px; word-spacing: 10px; }
+    </style>
+    <h3>text-center</h3> <p class="box text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam rerum repudiandae porro repellendus voluptatem necessitatibus impedit at officiis aut, optio labore dolores iure nesciunt perspiciatis nulla, perferendis esse nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos omnis rerum ipsam ipsa natus molestias eum dolorem molestiae! Consequuntur, repellat nesciunt! Voluptas beatae, deleniti optio vitae eaque alias corrupti!</p>
+    <h3>text-start</h3> <p class="box text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam rerum repudiandae porro repellendus voluptatem necessitatibus impedit at officiis aut, optio labore dolores iure nesciunt perspiciatis nulla, perferendis esse nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos omnis rerum ipsam ipsa natus molestias eum dolorem molestiae! Consequuntur, repellat nesciunt! Voluptas beatae, deleniti optio vitae eaque alias corrupti!</p>
+    <h3>text-end</h3> <p class="box text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam rerum repudiandae porro repellendus voluptatem necessitatibus impedit at officiis aut, optio labore dolores iure nesciunt perspiciatis nulla, perferendis esse nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos omnis rerum ipsam ipsa natus molestias eum dolorem molestiae! Consequuntur, repellat nesciunt! Voluptas beatae, deleniti optio vitae eaque alias corrupti!</p>
+    <h3>text-justify</h3> <p class="box text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam rerum repudiandae porro repellendus voluptatem necessitatibus impedit at officiis aut, optio labore dolores iure nesciunt perspiciatis nulla, perferendis esse nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos omnis rerum ipsam ipsa natus molestias eum dolorem molestiae! Consequuntur, repellat nesciunt! Voluptas beatae, deleniti optio vitae eaque alias corrupti!</p>
+    <h3>text-left</h3> <p class="box text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam rerum repudiandae porro repellendus voluptatem necessitatibus impedit at officiis aut, optio labore dolores iure nesciunt perspiciatis nulla, perferendis esse nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos omnis rerum ipsam ipsa natus molestias eum dolorem molestiae! Consequuntur, repellat nesciunt! Voluptas beatae, deleniti optio vitae eaque alias corrupti!</p>
+    <h3>text-right</h3> <p class="box text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam rerum repudiandae porro repellendus voluptatem necessitatibus impedit at officiis aut, optio labore dolores iure nesciunt perspiciatis nulla, perferendis esse nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos omnis rerum ipsam ipsa natus molestias eum dolorem molestiae! Consequuntur, repellat nesciunt! Voluptas beatae, deleniti optio vitae eaque alias corrupti!</p>
+
+    <a href="#">Click</a>
+    <p class="line-through">line-through</p>
+    <p class="overline">overline</p>
+    <p class="underline">underline</p>
+    <p class="text-indent"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quam eligendi eum quaerat, id laudantium. Alias iusto vero id neque quos. Reiciendis explicabo incidunt facere nihil in iste sint dolor. Facilis ullam repellendus impedit voluptatibus. Illo quidem ex at asperiores doloribus vero est saepe? Nesciunt, molestiae. Labore alias vero voluptas vel. Deleniti aspernatur necessitatibus labore corrupti placeat doloremque laboriosam ratione?     Ipsum, quos! Pariatur dolor nesciunt placeat quae, expedita recusandae unde nulla earum voluptate ipsa error cupiditate iste odit laudantium? Consequuntur aliquam, quis incidunt minima quidem assumenda porro aperiam inventore alias? 1Excepturi sit, doloribus molestias temporibus molestiae eaque enim nostrum similique distinctio ratione minima vitae natus corporis expedita id amet unde itaque nulla facere? Fuga ex quod numquam, distinctio voluptate explicabo.Commodi aperiam iusto adipisci officiis Beatae at doloribus quo nam facere consectetur veniam officia doloremque sint delectus, rerum deleniti nostrum! Quae labore ipsa ratione maiores. Assumenda commodi illo nobis magni numquam.</p>
+    <p class="white-space"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quam eligendi eum quaerat, id laudantium. Alias iusto vero id neque quos. Reiciendis explicabo incidunt facere nihil in iste sint dolor. Facilis ullam repellendus impedit voluptatibus. Illo quidem ex at asperiores doloribus vero est saepe? Nesciunt, molestiae. Labore alias vero voluptas vel. Deleniti aspernatur necessitatibus labore corrupti placeat doloremque laboriosam ratione?     Ipsum, quos! Pariatur dolor nesciunt placeat quae, expedita recusandae unde nulla earum voluptate ipsa error cupiditate iste odit laudantium? Consequuntur aliquam, quis incidunt minima quidem assumenda porro aperiam inventore alias? 1Excepturi sit, doloribus molestias temporibus molestiae eaque enim nostrum similique distinctio ratione minima vitae natus corporis expedita id amet unde itaque nulla facere? Fuga ex quod numquam, distinctio voluptate explicabo.Commodi aperiam iusto adipisci officiis Beatae at doloribus quo nam facere consectetur veniam officia doloremque sint delectus, rerum deleniti nostrum! Quae labore ipsa ratione maiores. Assumenda commodi illo nobis magni numquam.</p>
+    <p class="text-cap"> This is tHE Example of capitalization.</p>
+    <p class="text-up"> This is tHE Example uppercase.</p>
+    <p class="text-low"> This is tHE Example lowercase.</p>
+    <h2 class="text-shadow">text-shadow</h2>
+    <h2 class="letter-spacing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum amet veritatis obcaecati minima, quo iure totam placeat dignissimos ex enim deserunt ut dolore quibusdam architecto quasi ipsa, saepe voluptas.</h2>
+
+
+
+
+
+
+</body>
+</html>
