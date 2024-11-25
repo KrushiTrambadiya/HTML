@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Tag Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        dialog {
+            border: none;
+            padding: 20px;
+            width: 300px;
+        }
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dialog Tag in HTML</h1>
+    <p>Click the button below to open a dialog box:</p>
+    <button id="openDialog">Open Dialog</button>
+
+    <dialog id="myDialog">
+        <p>This is a dialog box!</p>
+        <button id="closeDialog">Close</button>
+    </dialog>
+
+    <script>
+        const openDialogButton = document.getElementById('openDialog');
+        const closeDialogButton = document.getElementById('closeDialog');
+        const myDialog = document.getElementById('myDialog');
+
+        // Open the dialog
+        openDialogButton.addEventListener('click', () => {
+            myDialog.showModal();
+        });
+
+        // Close the dialog
+        closeDialogButton.addEventListener('click', () => {
+            myDialog.close();
+        });
+    </script>
+
+    <h2>Practical Use</h2>
+    <p>The <code>&lt;dialog&gt;</code> tag is useful for:</p>
+    <ul>
+        <li>Displaying modal dialogs for user confirmations, alerts, or forms.</li>
+        <li>Creating non-modal dialogs for additional information without navigating away from the current page.</li>
+        <li>Improving user experience by focusing on a specific task without losing context.</li>
+    </ul>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the <code>&lt;dialog&gt;</code> tag in HTML?</strong>
+            <p>The <code>&lt;dialog&gt;</code> tag is used to create interactive dialog boxes, allowing for modal or non-modal interactions in web applications.</p>
+        </li>
+        <li><strong>What are the attributes associated with the <code>&lt;dialog&gt;</code> tag?</strong>
+            <p>Key attributes include <code>open</code> (indicating whether the dialog is displayed) and <code>id</code> (to identify the dialog in JavaScript).</p>
+        </li>
+        <li><strong>How do you open a dialog using JavaScript?</strong>
+            <p>You can open a dialog by calling the <code>show()</code> or <code>showModal()</code> methods on the dialog element.</p>
+        </li>
+        <li><strong>What is the difference between <code>show()</code> and <code>showModal()</code> methods?</strong>
+            <p>The <code>show()</code> method opens a non-modal dialog, allowing interaction with other elements on the page, while <code>showModal()</code> opens a modal dialog, blocking interaction with the rest of the page until closed.</p>
+        </li>
+        <li><strong>How do you close a dialog in HTML?</strong>
+            <p>You can close a dialog by calling the <code>close()</code> method on the dialog element.</p>
+        </li>
+        <li><strong>Can the <code>&lt;dialog&gt;</code> tag be styled with CSS?</strong>
+            <p>Yes, the <code>&lt;dialog&gt;</code> tag can be styled using CSS just like any other HTML element.</p>
+        </li>
+        <li><strong>Is the <code>&lt;dialog&gt;</code> element supported in all browsers?</strong>
+            <p>While modern browsers support the <code>&lt;dialog&gt;</code> element, older versions of some browsers may not. It is important to check compatibility and provide fallbacks if necessary.</p>
+        </li>
+        <li><strong>What happens if you do not include the <code>open</code> attribute in the <code>&lt;dialog&gt;</code> tag?</strong>
+            <p>If the <code>open</code> attribute is not included, the dialog will be hidden by default and must be opened programmatically or through user interaction.</p>
+        </li>
+        <li><strong>Can you include form elements inside a dialog?</strong>
+            <p>Yes, you can include any HTML elements, including forms, inside a dialog for user input or confirmation.</p>
+        </li>
+        <li><strong>How do you ensure accessibility for dialogs?</strong>
+            <p>To ensure accessibility, provide clear labels for dialogs, use <code>aria-labelledby</code> and <code>aria-describedby</code> attributes, and focus on the dialog when it opens.</p>
+        </li>
+    </ol>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        HTML5 dialog Tag
+    </title>
+</head>
+
+<body>
+    <h1>&lt;dialog&gt; tag</h1>
+    <dialog open>
+        Welcome to GeeksforGeeks
+    </dialog>
+</body>
+
+</html> -->

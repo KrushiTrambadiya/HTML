@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        img {
+            border: 1px solid #ccc;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Map in HTML</h1>
+    <p>An image map allows you to define clickable areas within an image. Below is an example:</p>
+
+    <img src="https://via.placeholder.com/500x300" alt="Sample Image" usemap="#samplemap" width="500" height="300">
+
+    <map name="samplemap">
+        <area shape="rect" coords="50,50,150,100" href="https://www.example.com/link1" alt="Link 1"
+            title="Visit Link 1">
+        <area shape="circle" coords="300,150,50" href="https://www.example.com/link2" alt="Link 2" title="Visit Link 2">
+        <area shape="poly" coords="200,100,250,200,150,200" href="https://www.example.com/link3" alt="Link 3"
+            title="Visit Link 3">
+    </map>
+
+    <h2>Practical Use</h2>
+    <p>Image maps are useful for:</p>
+    <ul>
+        <li>Creating interactive images where different sections link to different pages or resources.</li>
+        <li>Enhancing user experience by making images more engaging.</li>
+        <li>Allowing complex navigation through visual elements.</li>
+    </ul>
+    <a href="https://html.com/">
+        <img src="htmlcss.png" alt="">
+    </a>
+
+    <img src="htmlcss.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="HTML Official site" title="HTML Official site" href="https://html.com/"
+            coords="31,15,252,343" shape="rect">
+        <area target="" alt="" title="" href="https://www.w3.org/" coords="270,-1,470,16,482,293,405,339,290,302,288,29"
+            shape="poly">
+        <area target="" alt="" title="" href="https://javascript.info/" coords="607,168,130" shape="circle">
+    </map>
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is an image map in HTML?</strong>
+            <p>An image map is a way to create clickable areas on an image, allowing users to navigate to different
+                links by clicking different parts of the image.</p>
+        </li>
+        <li><strong>Which tags are used to create an image map?</strong>
+            <p>The <code>&lt;img&gt;</code>, <code>&lt;map&gt;</code>, and <code>&lt;area&gt;</code> tags are used to
+                create an image map.</p>
+        </li>
+        <li><strong>What is the purpose of the <code>usemap</code> attribute?</strong>
+            <p>The <code>usemap</code> attribute of the <code>&lt;img&gt;</code> tag links the image to a specific image
+                map defined by the <code>&lt;map&gt;</code> tag.</p>
+        </li>
+        <li><strong>What shapes can be defined in the <code>&lt;area&gt;</code> tag?</strong>
+            <p>The <code>&lt;area&gt;</code> tag can define rectangular (rect), circular (circle), and polygonal (poly)
+                areas.</p>
+        </li>
+        <li><strong>What are the <code>coords</code> attribute values?</strong>
+            <p>The <code>coords</code> attribute specifies the coordinates for the shape defined in the
+                <code>&lt;area&gt;</code> tag. The values depend on the shape:</p>
+            <ul>
+                <li><strong>rect:</strong> x1,y1,x2,y2 (top-left and bottom-right corners)</li>
+                <li><strong>circle:</strong> x,y,r (center x, center y, radius)</li>
+                <li><strong>poly:</strong> x1,y1,x2,y2,... (list of vertex coordinates)</li>
+            </ul>
+        </li>
+        <li><strong>Can you use more than one <code>&lt;area&gt;</code> tag in a single
+                <code>&lt;map&gt;</code>?</strong>
+            <p>Yes, you can use multiple <code>&lt;area&gt;</code> tags within a single <code>&lt;map&gt;</code> tag to
+                define different clickable areas on the same image.</p>
+        </li>
+        <li><strong>Is it possible to create a responsive image map?</strong>
+            <p>Yes, but it requires additional CSS techniques or JavaScript to adjust coordinates dynamically based on
+                the image size.</p>
+        </li>
+        <li><strong>What is the significance of the <code>alt</code> attribute in the <code>&lt;area&gt;</code>
+                tag?</strong>
+            <p>The <code>alt</code> attribute provides alternative text for the clickable area, which is useful for
+                accessibility.</p>
+        </li>
+        <li><strong>How does the <code>title</code> attribute in the <code>&lt;area&gt;</code> tag work?</strong>
+            <p>The <code>title</code> attribute shows a tooltip when the user hovers over the area, providing additional
+                information.</p>
+        </li>
+    </ol>
+
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="https://html.com/">
+        <img src="htmlcss.png" alt="">
+    </a>
+
+<img src="htmlcss.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="HTML Official site" title="HTML Official site" href="https://html.com/" coords="31,15,252,343" shape="rect">
+    <area target="" alt="" title="" href="https://www.w3.org/" coords="270,-1,470,16,482,293,405,339,290,302,288,29" shape="poly">
+    <area target="" alt="" title="" href="https://javascript.info/" coords="607,168,130" shape="circle">
+</map>
+</body>
+</html> -->

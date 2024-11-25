@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML `<img>` Tag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            border: 2px solid #ccc;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The `<img>` Tag in HTML</h1>
+    
+    <h2>Definition</h2>
+    <p>The <code>&lt;img&gt;</code> tag is used to embed images in an HTML document.</p>
+
+    <h2>Example</h2>
+    <pre>
+&lt;img src="https://example.com/image.jpg" alt="Description of the image" width="300" height="200"&gt;
+    </pre>
+    <img src="https://via.placeholder.com/300x200" alt="Placeholder image" width="300" height="200">
+
+    <h2>Attributes of the `<img>` Tag</h2>
+    <ul>
+        <li><strong>src:</strong> Path to the image file.</li>
+        <li><strong>alt:</strong> Alternative text for accessibility.</li>
+        <li><strong>width:</strong> Sets the width of the image (optional).</li>
+        <li><strong>height:</strong> Sets the height of the image (optional).</li>
+        <li><strong>title:</strong> Tooltip text when hovering over the image (optional).</li>
+        <li><strong>loading:</strong> Specifies whether to load the image immediately or defer loading (optional).</li>
+    </ul>
+
+    <h2>Practical Use</h2>
+    <p>The <code>&lt;img&gt;</code> tag is widely used to display images on web pages. It is crucial for:</p>
+    <ul>
+        <li>Showing photographs, illustrations, or icons.</li>
+        <li>Providing context for visually impaired users through the <code>alt</code> attribute.</li>
+        <li>Controlling image dimensions for responsive design.</li>
+    </ul>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the `<img>` tag?</strong>
+            <p>The <code>&lt;img&gt;</code> tag is used to embed images in an HTML document.</p>
+        </li>
+        <li><strong>What is the significance of the `src` attribute?</strong>
+            <p>The <code>src</code> attribute specifies the URL or path to the image file.</p>
+        </li>
+        <li><strong>Why is the `alt` attribute important?</strong>
+            <p>The <code>alt</code> attribute provides alternative text for the image, which helps with accessibility and displays if the image fails to load.</p>
+        </li>
+        <li><strong>Can you use the `<img>` tag without the `alt` attribute?</strong>
+            <p>While it is technically possible, it is highly discouraged as it negatively impacts accessibility.</p>
+        </li>
+        <li><strong>What do the `width` and `height` attributes do?</strong>
+            <p>The <code>width</code> and <code>height</code> attributes define the dimensions of the image displayed on the webpage.</p>
+        </li>
+        <li><strong>What happens if you don't specify `width` and `height`?</strong>
+            <p>If not specified, the image will display at its original size, which may affect layout.</p>
+        </li>
+        <li><strong>What is the `title` attribute used for?</strong>
+            <p>The <code>title</code> attribute provides additional information as a tooltip when hovering over the image.</p>
+        </li>
+        <li><strong>What is the `loading` attribute?</strong>
+            <p>The <code>loading</code> attribute indicates whether the image should load immediately or defer loading until needed (lazy loading).</p>
+        </li>
+        <li><strong>Is the `<img>` tag a block or inline element?</strong>
+            <p>The <code>&lt;img&gt;</code> tag is an inline element by default.</p>
+        </li>
+        <li><strong>Can you use CSS to style images?</strong>
+            <p>Yes, CSS can be used to apply styles to images, such as borders, margins, and effects.</p>
+        </li>
+    </ol>
+    <h2>Relative Path</h2>
+    <img src="htmlcss.png" alt="">
+    <img src="../../htmlVScss.jpg" alt="">
+    <h2>Absolute Path</h2>
+    <img src="C:\xampp\htdocs\UI_UX/htmlVScss.jpg" alt="">
+    <img src="file:///C:/xampp/htdocs/UI_UX/htmlVScss.jpg" alt="">
+    <img src="https://img-c.udemycdn.com/course/750x422/5396030_f3ee_5.jpg" alt="">
+    
+    <h3>Importance of alt</h3>
+    <img src="../../htmlVScsss.jpg" alt="no image found">
+    <img src="../../htmlVScsss.jpg" height="200px" >
+    <img src="../../htmlVScsss.jpg" height="200px" width="200px">
+    <img src="../../htmlVScsss.jpg" height="200px" alt="no image found">
+    <img src="../../htmlVScsss.jpg" height="200px" width="200px" alt="no image found">
+    
+    <pre>
+        Relative vs Absolute File Paths
+        To make use of HTML file paths, the two options are either relative or absolute file paths. With relative file paths, the files you intend to reference are located in the same folder of your website folder structure. On the other hand, with absolute file paths, you refer to external resources located elsewhere on the web.
+
+        Using absolute file paths, we can access a file content or resource with their full URL path, which means you can also reference content directly from the web. For example, you can refer to an image from a URL like:
+
+        HTML
+        img src="https://www.hubspot.com/images/hub.jpg" alt="hub"
+        The src is also known as the source attribute, which tells us the file path.
+
+        Alternatively, with relative file paths, the file path references a file relative to the current working location or file in the folder structure. For example, say you  have a hub.jpg file in the images folder, one level up in the folder hierarchy. You can easily access it like this: <img src="../images/hub.jpg">. The first period represents the current directory, and the next period moves one level up the directory structure.
+
+        For relative file paths, to link to a particular file in the same folder you would use the file name alone, such as hub.jpg. To refer to a file located in a nested images folder, all you need to do is write the name of the folder in front of the path and a forward slash: images/hug.jpg.
+
+        It’s best practice to use relative file paths, as they are local to the folder hierarchy of your project and always remain the same. In contrast, absolute file paths may be located anywhere on the Internet and can change at any time, potentially leading to broken links.
+
+        With relative file paths, care must be taken regarding how you reference these files, the spellings of the file names, their location, file extension, and so on. This is so that you can ensure that the resource loads properly. For absolute file paths, the URL must be valid and contain the needed resource for the web page to load appropriately.
+
+        Also, with relative file paths, images (for example) have to be loaded over the Internet. In some cases, it might take large images some time to load, which can lead to slower websites. Therefore, if you no longer have to depend on an external URL, it’s advisable to use relative file paths over absolute file paths wherever possible.
+    </pre>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Relative Path</h2>
+    <img src="htmlcss.png" alt="">
+    <img src="../../htmlVScss.jpg" alt="">
+    <h2>Absolute Path</h2>
+    <img src="C:\xampp\htdocs\UI_UX/htmlVScss.jpg" alt="">
+    <img src="file:///C:/xampp/htdocs/UI_UX/htmlVScss.jpg" alt="">
+    <img src="https://img-c.udemycdn.com/course/750x422/5396030_f3ee_5.jpg" alt="">
+    
+    <h3>Importance of alt</h3>
+    <img src="../../htmlVScsss.jpg" alt="no image found">
+    <img src="../../htmlVScsss.jpg" height="200px" >
+    <img src="../../htmlVScsss.jpg" height="200px" width="200px">
+    <img src="../../htmlVScsss.jpg" height="200px" alt="no image found">
+    <img src="../../htmlVScsss.jpg" height="200px" width="200px" alt="no image found">
+    
+    <pre>
+        Relative vs Absolute File Paths
+        To make use of HTML file paths, the two options are either relative or absolute file paths. With relative file paths, the files you intend to reference are located in the same folder of your website folder structure. On the other hand, with absolute file paths, you refer to external resources located elsewhere on the web.
+
+        Using absolute file paths, we can access a file content or resource with their full URL path, which means you can also reference content directly from the web. For example, you can refer to an image from a URL like:
+
+        HTML
+        img src="https://www.hubspot.com/images/hub.jpg" alt="hub"
+        The src is also known as the source attribute, which tells us the file path.
+
+        Alternatively, with relative file paths, the file path references a file relative to the current working location or file in the folder structure. For example, say you  have a hub.jpg file in the images folder, one level up in the folder hierarchy. You can easily access it like this: <img src="../images/hub.jpg">. The first period represents the current directory, and the next period moves one level up the directory structure.
+
+        For relative file paths, to link to a particular file in the same folder you would use the file name alone, such as hub.jpg. To refer to a file located in a nested images folder, all you need to do is write the name of the folder in front of the path and a forward slash: images/hug.jpg.
+
+        It’s best practice to use relative file paths, as they are local to the folder hierarchy of your project and always remain the same. In contrast, absolute file paths may be located anywhere on the Internet and can change at any time, potentially leading to broken links.
+
+        With relative file paths, care must be taken regarding how you reference these files, the spellings of the file names, their location, file extension, and so on. This is so that you can ensure that the resource loads properly. For absolute file paths, the URL must be valid and contain the needed resource for the web page to load appropriately.
+
+        Also, with relative file paths, images (for example) have to be loaded over the Internet. In some cases, it might take large images some time to load, which can lead to slower websites. Therefore, if you no longer have to depend on an external URL, it’s advisable to use relative file paths over absolute file paths wherever possible.
+    </pre>
+</body>
+</html> -->

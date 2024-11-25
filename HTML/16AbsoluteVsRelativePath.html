@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute vs Relative Path in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            border: 2px solid #ccc;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Absolute vs Relative Path in HTML</h1>
+    
+    <h2>Absolute Path</h2>
+    <p>An <strong>absolute path</strong> specifies the complete URL to the resource.</p>
+    <pre>
+&lt;img src="https://www.example.com/images/photo.jpg" alt="An example image"&gt;
+    </pre>
+    <img src="https://via.placeholder.com/300x200" alt="Example of an absolute path image">
+
+    <h2>Relative Path</h2>
+    <p>A <strong>relative path</strong> specifies the location of the resource in relation to the current document's location.</p>
+    <pre>
+&lt;img src="images/photo.jpg" alt="An example image"&gt;
+    </pre>
+    <p><strong>Directory Structure:</strong></p>
+    <pre>
+/project
+    /images
+        photo.jpg
+    index.html
+    </pre>
+    <img src="https://via.placeholder.com/300x200" alt="Example of a relative path image" style="display:none;"> <!-- Placeholder for relative path -->
+
+    <h2>Practical Use</h2>
+    <p>Understanding when to use absolute vs relative paths is crucial for:</p>
+    <ul>
+        <li>Ensuring links to external resources work correctly regardless of the document's location.</li>
+        <li>Making it easier to manage resources within a single project.</li>
+        <li>Facilitating website maintenance and updates.</li>
+    </ul>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is an absolute path?</strong>
+            <p>An absolute path specifies the complete URL to a resource, including the protocol and domain.</p>
+        </li>
+        <li><strong>What is a relative path?</strong>
+            <p>A relative path specifies the location of a resource in relation to the current document's location.</p>
+        </li>
+        <li><strong>When should you use an absolute path?</strong>
+            <p>Use an absolute path when linking to resources hosted on different domains.</p>
+        </li>
+        <li><strong>When is a relative path preferred?</strong>
+            <p>A relative path is preferred when linking to resources within the same website or project.</p>
+        </li>
+        <li><strong>How does changing the directory structure affect relative paths?</strong>
+            <p>Changing the directory structure can break relative paths, whereas absolute paths remain valid as they include the full URL.</p>
+        </li>
+        <li><strong>What is the potential downside of using absolute paths?</strong>
+            <p>Absolute paths can make the code less portable; if the domain changes, all links must be updated.</p>
+        </li>
+        <li><strong>Can a relative path include `../`?</strong>
+            <p>Yes, using `../` allows you to navigate up one level in the directory structure.</p>
+        </li>
+        <li><strong>Can you mix absolute and relative paths in the same document?</strong>
+            <p>Yes, you can use both absolute and relative paths in the same HTML document as needed.</p>
+        </li>
+        <li><strong>How would you link to a CSS file using an absolute path?</strong>
+            <p>&lt;link rel="stylesheet" href="https://www.example.com/styles.css"&gt;</p>
+        </li>
+        <li><strong>How would you link to a JavaScript file using a relative path?</strong>
+            <p>&lt;script src="scripts/app.js"&gt;&lt;/script&gt;</p>
+        </li>
+    </ol>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Absolute Path</h2>
+    <p>excat location of loaded file</p>
+    <p>img src="../../htmlVScss.jpg" alt=""</p>
+    
+    <h2>Relative Path</h2>
+    <p>related location of loaded file with executed file</p>
+    ../
+    <p>img src="../../htmlVScss.jpg" alt=""</p>
+</body>
+</html> -->

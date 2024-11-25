@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        svg {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SVG Tag in HTML</h1>
+    <p>The <code>&lt;svg&gt;</code> tag is used to define vector graphics in HTML. Below is an example:</p>
+
+    <svg width="200" height="200">
+        <!-- Circle -->
+        <circle cx="100" cy="100" r="80" fill="lightblue" />
+        
+        <!-- Rectangle -->
+        <rect x="50" y="50" width="100" height="100" fill="orange" />
+
+        <!-- Text -->
+        <text x="100" y="150" font-family="Arial" font-size="20" text-anchor="middle" fill="black">SVG Example</text>
+    </svg>
+
+    <h2>Practical Use</h2>
+    <p>Using the <code>&lt;svg&gt;</code> tag is beneficial for:</p>
+    <ul>
+        <li>Creating responsive graphics that scale without losing quality.</li>
+        <li>Implementing complex shapes and animations with CSS and JavaScript.</li>
+        <li>Drawing charts, graphs, and diagrams dynamically.</li>
+    </ul>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the <code>&lt;svg&gt;</code> tag in HTML?</strong>
+            <p>The <code>&lt;svg&gt;</code> tag is used to define vector-based graphics in HTML, allowing for scalable and interactive visuals.</p>
+        </li>
+        <li><strong>What are the basic attributes of the <code>&lt;svg&gt;</code> element?</strong>
+            <p>The basic attributes include <code>width</code> and <code>height</code> to define the dimensions of the SVG canvas.</p>
+        </li>
+        <li><strong>Can you embed raster images in SVG?</strong>
+            <p>Yes, you can embed raster images using the <code>&lt;image&gt;</code> element inside the SVG.</p>
+        </li>
+        <li><strong>What are some common shapes you can create with SVG?</strong>
+            <p>Common shapes include <code>&lt;circle&gt;</code>, <code>&lt;rect&gt;</code>, <code>&lt;line&gt;</code>, <code>&lt;polygon&gt;</code>, and <code>&lt;path&gt;</code>.</p>
+        </li>
+        <li><strong>How can you animate SVG graphics?</strong>
+            <p>You can animate SVG graphics using CSS animations or JavaScript, including libraries like GSAP or using SVG's built-in <code>&lt;animate&gt;</code> element.</p>
+        </li>
+        <li><strong>Is SVG graphics accessible?</strong>
+            <p>Yes, SVG can be made accessible by providing titles, descriptions, and using ARIA attributes.</p>
+        </li>
+        <li><strong>How does SVG differ from traditional image formats like PNG and JPEG?</strong>
+            <p>SVG is a vector format, which means it can be scaled to any size without loss of quality, while PNG and JPEG are raster formats that can become pixelated when scaled.</p>
+        </li>
+        <li><strong>What is the <code>viewBox</code> attribute in SVG?</strong>
+            <p>The <code>viewBox</code> attribute defines the coordinate system and scaling of the SVG content. It allows the SVG to be responsive and scale to fit different sizes.</p>
+        </li>
+        <li><strong>Can SVG graphics be styled with CSS?</strong>
+            <p>Yes, SVG graphics can be styled using CSS just like HTML elements, allowing for easy customization of colors, strokes, and more.</p>
+        </li>
+        <li><strong>What is the role of the <code>&lt;path&gt;</code> element in SVG?</strong>
+            <p>The <code>&lt;path&gt;</code> element is used to define complex shapes using a series of commands and parameters that specify lines, curves, and arcs.</p>
+        </li>
+    </ol>
+
+</body>
+</html>

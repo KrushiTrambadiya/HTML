@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend><h2>Form Element</h2></legend>
+        <form action="" method="post">
+            <table border="1" align="center">
+                <tr>
+                    <td><label for="">User Name</label></td>
+                    <!-- <td><input type="text" value="data" placeholder="Enter User Name" name="username" id="username"></td> -->
+                    <td><input type="text" placeholder="Enter User Name" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input type="password" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email" placeholder="example@mail.com" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label> 
+                        <input type="radio" name="gender" value="Female" id="Female"><label for="Female">Female</label> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Hobby</label></td>
+                    <td>
+                        <input type="checkbox" name="chk[]" value="Cricket" id="Cricket"><label for="Cricket">Cricket</label> 
+                        <input type="checkbox" name="chk[]" value="Music" id="Music"><label for="Music">Music</label> 
+                        <input type="checkbox" name="chk[]" value="Travelling" id="Travelling"><label for="Travelling">Travelling</label> 
+                        <input type="checkbox" name="chk[]" value="Reading" id="Reading"><label for="Reading">Reading</label> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Address</label></td>
+                    <td>
+                        <textarea name="" rows="3" cols="50" id=""></textarea> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">City</label></td>
+                    <td>
+                        <select name="city" id="city">
+                            <option value="">--select city--</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Baroda">Baroda</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Education</label></td>
+                    <td>
+                        <select name="edu" id="edu" multiple>
+                            <option value="10th">10th</option>
+                            <option value="">12th</option>
+                            <option value="">BCA</option>
+                            <option value="">B.com</option>
+                            <option value="">BBA</option>
+                            <option value="">MCA</option>
+                            <option value="">MSc.IT</option>
+                            <option value="">Mphill</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobile</label></td>
+                    <td>
+                        <input type="tel" name="" id=""> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Age</label></td>
+                    <td>
+                        <input type="number" name="" id=""> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Color</label></td>
+                    <td>
+                        <input type="color" name="" id=""> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Date</label></td>
+                    <td>
+                        <input type="date" name="" id=""> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Date</label></td>
+                    <td>
+                        <input type="datetime-local" name="" id=""> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Month</label></td>
+                    <td>
+                        <input type="month" name="" id=""> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Week</label></td>
+                    <td>
+                        <input type="week" name="" id=""> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">range</label></td>
+                    <td>
+                        <input type="range" name="" id=""> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fuel">Fuel level:</label></td>
+                    <td>
+                        
+                        <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="78">at 50/100</meter>
+ 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fuel">Cars</label></td>
+                    <td>
+                        <select  name="cars" id="cars">
+                            <optgroup label="Swedish Cars">
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                            </optgroup>
+                            <optgroup label="German Cars">
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </optgroup>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fuel">Items</label></td>
+                    <td>
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Chrome">
+                            <option value="Fire">
+                            <option value="fox">
+                            <option value="inter">
+                            <option value="net">
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" name="btn" value="Save" id="btn"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
+      </form>
+    <!-- <form id="example-form">
+        <input type="range" id="b" name="b" value="50" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+      </form> -->
+</body>
+</html>

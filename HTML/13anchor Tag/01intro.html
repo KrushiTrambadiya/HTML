@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Tag Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Anchor Tag in HTML</h1>
+    <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks. Here are some examples:</p>
+
+    <h2>External Link</h2>
+    <p>Visit the <a href="https://www.example.com" target="_blank">Example Website</a> for more information.</p>
+
+    <h2>Internal Link</h2>
+    <p>Go to the <a href="#about">About Section</a> of this page.</p>
+
+    <h2>Link to Email</h2>
+    <p>Send an email to <a href="mailto:info@example.com">info@example.com</a>.</p>
+
+    <h2>Link to a File</h2>
+    <p>Download the <a href="path/to/file.pdf" download>PDF Document</a>.</p>
+
+    <h2>About Section</h2>
+    <p id="about">This is the about section of the page.</p>
+
+    <h2>Practical Use</h2>
+    <p>The <code>&lt;a&gt;</code> tag is useful for:</p>
+    <ul>
+        <li>Creating links to other web pages, both internal and external.</li>
+        <li>Linking to specific sections within a page using anchor links.</li>
+        <li>Facilitating email communication by linking to email addresses.</li>
+        <li>Providing downloadable files for users.</li>
+    </ul>
+
+    <ul>
+
+        <li> <a href="google">google</a></li>
+        <li> <a href="www.google.com">www.google.com</a></li>
+        <li> <a href="http://www.google.com">http://www.google.com</a></li>
+        <li> <a href="https://www.google.com">https://www.google.com</a></li>
+        <li> <a href="https://www.google.com">https://www.google.com</a></li>
+        <li> <a href="aboutus.html">About us</a></li>
+    </ul>
+    <h2>Internal Link</h2>
+    <ul>
+        <li><a href="#section-top">section-top</a></li>
+        <li><a href="#section-sec">section-sec</a></li>
+        <li><a href="#section-other">section-other</a></li>
+        <li><a href="#section-sec-last">section-sec-last</a></li>
+        <li><a href="#section-last">section-last</a></li>
+
+    </ul>
+    
+    <div style="height: 200px; background-color: blue;" id="section-top"> example section top</div>
+    <div style="height: 200px; background-color: yellow;" id="section-sec"> example section-sec </div>
+    <div style="height: 200px; background-color: turquoise;" id="section-other"> example section other</div>
+    <div style="height: 200px; background-color: teal;" id="section-sec-last"> example section sec-last</div>
+    <div style="height: 200px; background-color: grey;" id="section-last"> example section last</div>
+
+    <br> <a href="DALL.webp">Click me for the magic</a>
+    <br> <a target="_blank" href="DALL.webp">Click me for the magic</a>
+    <br> <a target="_self" href="DALL.webp">_self Click me for the magic</a>
+    <br> <a target="_top" href="#">TOP</a>
+    <br> <a href="#">TOP</a>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the <code>&lt;a&gt;</code> tag in HTML?</strong>
+            <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks, allowing users to navigate to other pages or resources.</p>
+        </li>
+        <li><strong>What is the <code>href</code> attribute in the <code>&lt;a&gt;</code> tag?</strong>
+            <p>The <code>href</code> attribute specifies the URL of the page or resource that the link points to.</p>
+        </li>
+        <li><strong>What does the <code>target</code> attribute do?</strong>
+            <p>The <code>target</code> attribute specifies where to open the linked document. Common values include <code>_blank</code> for a new tab and <code>_self</code> for the same frame.</p>
+        </li>
+        <li><strong>Can the <code>&lt;a&gt;</code> tag link to an email address?</strong>
+            <p>Yes, you can use the <code>mailto:</code> scheme in the <code>href</code> attribute to create a link that opens the user's email client.</p>
+        </li>
+        <li><strong>How do you create an anchor link within the same page?</strong>
+            <p>To create an anchor link, use the <code>&lt;a&gt;</code> tag with the <code>href</code> attribute set to the ID of the target element, preceded by a <code>#</code>.</p>
+        </li>
+        <li><strong>What is the difference between an external link and an internal link?</strong>
+            <p>An external link points to a different website, while an internal link navigates within the same website or page.</p>
+        </li>
+        <li><strong>How can you make a link open in a new tab?</strong>
+            <p>To open a link in a new tab, use the <code>target="_blank"</code> attribute in the <code>&lt;a&gt;</code> tag.</p>
+        </li>
+        <li><strong>Is it possible to style links with CSS?</strong>
+            <p>Yes, links can be styled using CSS, allowing you to change their color, font, size, and other properties.</p>
+        </li>
+        <li><strong>What happens if you do not include the <code>href</code> attribute in an <code>&lt;a&gt;</code> tag?</strong>
+            <p>If the <code>href</code> attribute is not included, the link will not navigate anywhere when clicked.</p>
+        </li>
+        <li><strong>Can you use the <code>&lt;a&gt;</code> tag to link to a file?</strong>
+            <p>Yes, you can link to files (such as PDFs or images) by specifying the file's path in the <code>href</code> attribute.</p>
+        </li>
+    </ol>
+
+</body>
+</html>

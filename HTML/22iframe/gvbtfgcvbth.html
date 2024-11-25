@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Tag Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        iframe {
+            border: 2px solid #007BFF; /* Border styling */
+            margin-top: 20px;
+            width: 100%; /* Full width */
+            height: 400px; /* Fixed height */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iframe Tag in HTML</h1>
+    <p>The <code>&lt;iframe&gt;</code> tag is used to embed another document within the current HTML document. Here is an example:</p>
+
+    <h2>Embedded Google Map</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509421!2d144.95373531531626!3d-37.81627997975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0b0ef681%3A0xbdfc50c3506cbef7!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1624008442714!5m2!1sen!2sau" allowfullscreen></iframe>
+
+    <h2>Practical Use</h2>
+    <p>The <code>&lt;iframe&gt;</code> tag is useful for:</p>
+    <ul>
+        <li>Embedding videos from platforms like YouTube.</li>
+        <li>Incorporating maps from Google Maps to show locations.</li>
+        <li>Displaying content from other websites without leaving the current page.</li>
+        <li>Creating interactive content like quizzes or surveys hosted on other platforms.</li>
+    </ul>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the <code>&lt;iframe&gt;</code> tag in HTML?</strong>
+            <p>The <code>&lt;iframe&gt;</code> tag is used to embed another HTML document within the current page, allowing for the display of content from different sources.</p>
+        </li>
+        <li><strong>What is the <code>src</code> attribute in the <code>&lt;iframe&gt;</code> tag?</strong>
+            <p>The <code>src</code> attribute specifies the URL of the document to be embedded in the iframe.</p>
+        </li>
+        <li><strong>Can you embed a video using the <code>&lt;iframe&gt;</code> tag?</strong>
+            <p>Yes, you can embed videos from platforms like YouTube by using the iframe tag with the video URL.</p>
+        </li>
+        <li><strong>What does the <code>allowfullscreen</code> attribute do?</strong>
+            <p>The <code>allowfullscreen</code> attribute enables the iframe content to be displayed in full-screen mode when supported by the embedded content.</p>
+        </li>
+        <li><strong>How can you control the size of an iframe?</strong>
+            <p>You can control the size of an iframe by setting the <code>width</code> and <code>height</code> attributes or using CSS styles.</p>
+        </li>
+        <li><strong>What is the significance of the <code>frameborder</code> attribute?</strong>
+            <p>The <code>frameborder</code> attribute is used to specify whether to display a border around the iframe, though it is deprecated in HTML5. CSS is recommended for styling instead.</p>
+        </li>
+        <li><strong>Is it possible to load a website in an iframe that has implemented a restrictive policy?</strong>
+            <p>Some websites use the X-Frame-Options HTTP header to prevent their content from being embedded in iframes on other sites. In such cases, the embedded content may not display.</p>
+        </li>
+        <li><strong>Can you navigate the main page using links within an iframe?</strong>
+            <p>Links in the iframe will navigate within the iframe itself by default. To navigate the parent page, you can set the link target to <code>_parent</code> or <code>_top</code>.</p>
+        </li>
+        <li><strong>What are some accessibility concerns related to iframes?</strong>
+            <p>Using iframes can create accessibility challenges. It's important to provide descriptive titles for iframes and ensure that the embedded content is accessible to screen readers.</p>
+        </li>
+        <li><strong>What are some best practices for using iframes?</strong>
+            <p>Best practices include using iframes for legitimate content embedding, ensuring the source is trusted, setting appropriate dimensions, and considering mobile responsiveness.</p>
+        </li>
+    </ol>
+
+</body>
+</html>

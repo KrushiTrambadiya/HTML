@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form Tag in HTML</h1>
+    <p>The <code>&lt;form&gt;</code> tag is used to collect user input. Here is an example of a simple contact form:</p>
+
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Practical Use</h2>
+    <p>The <code>&lt;form&gt;</code> tag is useful for:</p>
+    <ul>
+        <li>Collecting user data such as names, emails, and messages.</li>
+        <li>Facilitating user registration and login processes.</li>
+        <li>Receiving feedback from users through surveys and questionnaires.</li>
+        <li>Uploading files through the use of input elements.</li>
+    </ul>
+    <h2>Form</h2>
+    <p>Form will helps to send client data to the server</p>
+    <p>The &lt;form&gt; tag is used to create an HTML form for user input. It serves as a container for various input
+        elements like text fields, checkboxes, and buttons, enabling the collection of data for submission to a server
+        or processing via client-side scripts. </p>
+    <h3>Supported Elements </h3>
+    <ul>
+        <li value="1"><a href="https://www.geeksforgeeks.org/html-input-tag/" rel="noreferrer noopener"><span>&lt;input&gt;</span></a></li>
+        <li value="2"><a href="https://www.geeksforgeeks.org/html-button-tag/" rel="noreferrer noopener"><span>&lt;button&gt;</span></a></li>
+        <li value="3"><a href="https://www.geeksforgeeks.org/html-select-tag/" rel="noreferrer noopener"><span>&lt;select&gt;</span></a></li>
+        <li value="4"><a href="https://www.geeksforgeeks.org/html-textarea-tag/" rel="noreferrer noopener"><span>&lt;textarea&gt;</span></a></li>
+        <li value="5"><a href="https://www.geeksforgeeks.org/html-label-tag/" rel="noreferrer noopener"><span>&lt;label&gt;</span></a></li>
+        <li value="6"><a href="https://www.geeksforgeeks.org/html5-fieldset-tag/" rel="noreferrer noopener"><span>&lt;fieldset&gt;</span></a></li>
+        <li value="7"><a href="https://www.geeksforgeeks.org/html-legend-tag/" rel="noreferrer noopener"><span>&lt;legend&gt;</span></a></li>
+        <li value="8"><a href="https://www.geeksforgeeks.org/html-datalist-tag/" rel="noreferrer noopener"><span>&lt;datalist&gt;</span></a></li>
+        <li value="9"><a href="https://www.geeksforgeeks.org/html-output-tag/" rel="noreferrer noopener"><span>&lt;output&gt;</span></a></li>
+    </ul>
+
+    <table><thead><tr><th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>Attributes</span></p>
+    </th><th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>Descriptions</span></p>
+    </th></tr></thead><tbody><tr><th style="width: 350px;"><p dir="ltr"><a href="https://www.geeksforgeeks.org/html-form-name-attribute/" rel="noreferrer noopener"><span>name</span></a></p>
+    </th><td style="width: 350px;"><p dir="ltr"><span>It provides a name for the form.</span></p>
+    </td></tr><tr><th style="width: 350px;"><p dir="ltr"><a href="https://www.geeksforgeeks.org/html-form-target-attribute/" rel="noreferrer noopener"><b><strong>target</strong></b></a></p>
+    </th><td style="width: 350px;"><p dir="ltr"><span>It specifies where to display the response after form submission (like a new window or the current window).</span></p>
+    </td></tr><tr><th style="width: 350px;"><p dir="ltr"><a href="https://www.geeksforgeeks.org/html-action-attribute/" rel="noopener"><b><strong>Action Attribute</strong></b></a></p>
+    </th><td style="width: 350px;"><p dir="ltr"><span>Sends form data to the server upon submission.</span></p>
+    </td></tr><tr><th style="width: 350px;"><p dir="ltr"><a href="https://www.geeksforgeeks.org/html-enctype-attribute/" rel="noopener"><b><strong>Enctype Attribute</strong></b></a></p>
+    </th><td style="width: 350px;"><ul><li value="1"><b><strong>application/x-www-form-urlencoded:</strong></b><span> Standard form data submission.</span></li><li value="2"><b><strong>multipart/form-data:</strong></b><span> Used for file uploads like images, documents, etc.</span></li></ul></td></tr><tr><th style="width: 350px;"><p dir="ltr"><a href="https://www.geeksforgeeks.org/html-form-method-attribute/" rel="noreferrer noopener"><b><strong>Methods</strong></b></a></p>
+    </th><td style="width: 350px;"><ul><li value="1"><b><strong>Get Method:</strong></b><span> Limited URL character length, and used when we have to get data from somewhere like server.</span></li><li value="2"><b><strong>Post Method:</strong></b><span> No size limits, submissions cannot be bookmarked and used when we sends data to server.</span></li></ul></td></tr><tr><th style="width: 350px;"><p dir="ltr"><a href="https://www.geeksforgeeks.org/html-accept-charset-attribute/" rel="noreferrer noopener"><span>accept-charset</span></a></p>
+    </th><td style="width: 350px;"><p dir="ltr"><span>It specifies the character encodings that is to be used for the form submission</span></p>
+    </td></tr><tr><th style="width: 350px;"><p dir="ltr"><a href="https://www.geeksforgeeks.org/html-form-autocomplete-attribute/" rel="noreferrer noopener"><span>autocomplete</span></a></p>
+    </th><td style="width: 350px;"><p dir="ltr"><span>It specifies whether a form should have autocomplete on or off</span></p>
+    </td></tr><tr><th style="width: 350px;"><p dir="ltr"><a href="https://www.geeksforgeeks.org/html-form-novalidate-attribute/" rel="noreferrer noopener"><span>novalidate</span></a></p>
+    </th><td style="width: 350px;"><p dir="ltr"><span>It specifies that the form should not be validated before submitting</span></p>
+    </td></tr><tr><th style="width: 350px;"><p dir="ltr"><a href="https://www.geeksforgeeks.org/html-form-rel-attribute/" rel="noreferrer noopener"><span>rel</span></a></p>
+    </th><td style="width: 350px;"><p dir="ltr"><span>It specifies the relationship between a linked resource and the current document.</span></p>
+    </td></tr></tbody></table>
+   
+    <form target="_blank" action="login.php">
+        <button type="submit">Click me</button>
+    </form>
+
+
+    <p>while we are uploading any file to the server we need to add enctype="multipart/form-data" in form tag with post method</p>
+    <form target="_blank" method="post" enctype="multipart/form-data" action="login.php">
+        <input type="file" name="image" id="image">
+        <button type="submit">Click me</button>
+    </form>
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the <code>&lt;form&gt;</code> tag in HTML?</strong>
+            <p>The <code>&lt;form&gt;</code> tag is used to create a form for user input, allowing users to submit data to a server.</p>
+        </li>
+        <li><strong>What is the <code>action</code> attribute in the <code>&lt;form&gt;</code> tag?</strong>
+            <p>The <code>action</code> attribute specifies the URL where the form data will be sent for processing when the form is submitted.</p>
+        </li>
+        <li><strong>What are the two common methods used in forms?</strong>
+            <p>The two common methods are <code>GET</code> and <code>POST</code>. <code>GET</code> appends data to the URL, while <code>POST</code> sends data in the request body.</p>
+        </li>
+        <li><strong>What types of input elements can be used within a form?</strong>
+            <p>Forms can contain various input elements, including <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code>.</p>
+        </li>
+        <li><strong>How can you make a form field required?</strong>
+            <p>You can make a form field required by adding the <code>required</code> attribute to the input element.</p>
+        </li>
+        <li><strong>What is the difference between the <code>GET</code> and <code>POST</code> methods?</strong>
+            <p><code>GET</code> sends data in the URL, which can be seen in the browser's address bar, while <code>POST</code> sends data in the request body, making it more secure.</p>
+        </li>
+        <li><strong>What is a <code>&lt;textarea&gt;</code> element used for?</strong>
+            <p>The <code>&lt;textarea&gt;</code> element is used for multi-line text input, allowing users to enter longer text responses.</p>
+        </li>
+        <li><strong>How do you create a drop-down list in a form?</strong>
+            <p>A drop-down list can be created using the <code>&lt;select&gt;</code> element, which contains multiple <code>&lt;option&gt;</code> elements.</p>
+        </li>
+        <li><strong>Can you include file uploads in a form?</strong>
+            <p>Yes, you can include file uploads by using the <code>&lt;input type="file"&gt;</code> element and setting the form's <code>enctype</code> attribute to <code>multipart/form-data</code>.</p>
+        </li>
+        <li><strong>How can you prevent form submission if there are validation errors?</strong>
+            <p>HTML5 form validation automatically prevents submission if required fields are not filled or if the input does not meet the specified criteria.</p>
+        </li>
+    </ol>
+
+</body>
+</html>

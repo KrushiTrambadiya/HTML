@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockquote, Details, and Summary Tags in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        blockquote {
+            border-left: 5px solid #ccc;
+            margin: 20px 0;
+            padding-left: 10px;
+            color: #555;
+        }
+        details {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blockquote, Details, and Summary Tags in HTML</h1>
+    
+    <h2>1. Blockquote (`<blockquote>`)</h2>
+    <p>The <code>&lt;blockquote&gt;</code> tag is used to define a section that is quoted from another source.</p>
+    <pre>
+&lt;blockquote&gt;
+    "The only limit to our realization of tomorrow will be our doubts of today."
+    &lt;cite&gt;- Franklin D. Roosevelt&lt;/cite&gt;
+&lt;/blockquote&gt;
+    </pre>
+    <blockquote>
+        "The only limit to our realization of tomorrow will be our doubts of today." 
+        <cite>- Franklin D. Roosevelt</cite>
+    </blockquote>
+
+    <h2>2. Details (`<details>`)</h2>
+    <p>The <code>&lt;details&gt;</code> tag is used to create a disclosure widget that shows additional information.</p>
+    <pre>
+&lt;details&gt;
+    &lt;summary&gt;More Information&lt;/summary&gt;
+    &lt;p&gt;This section contains additional details that can be expanded or collapsed.&lt;/p&gt;
+&lt;/details&gt;
+    </pre>
+    <details>
+        <summary>More Information</summary>
+        <p>This section contains additional details that can be expanded or collapsed.</p>
+    </details>
+
+    <h2>3. Summary (`<summary>`)</h2>
+    <p>The <code>&lt;summary&gt;</code> tag is used as a heading for the <code>&lt;details&gt;</code> tag.</p>
+    <pre>
+&lt;details&gt;
+    &lt;summary&gt;Click to reveal details&lt;/summary&gt;
+    &lt;p&gt;Details about the topic go here. This content is hidden until the summary is clicked.&lt;/p&gt;
+&lt;/details&gt;
+    </pre>
+    <details>
+        <summary>Click to reveal details</summary>
+        <p>Details about the topic go here. This content is hidden until the summary is clicked.</p>
+    </details>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the `<blockquote>` tag?</strong>
+            <p>The <code>&lt;blockquote&gt;</code> tag is used to indicate that a section of text is a quotation from another source.</p>
+        </li>
+        <li><strong>How do you create a blockquote in HTML?</strong>
+            <p>You can create a blockquote using the <code>&lt;blockquote&gt;</code> tag followed by the quoted text.</p>
+        </li>
+        <li><strong>What does the `<details>` tag do?</strong>
+            <p>The <code>&lt;details&gt;</code> tag creates a disclosure widget from which the user can obtain additional information.</p>
+        </li>
+        <li><strong>How is the `<summary>` tag used?</strong>
+            <p>The <code>&lt;summary&gt;</code> tag provides a summary or title for the content inside a <code>&lt;details&gt;</code> element.</p>
+        </li>
+        <li><strong>Can you use nested details and summary elements?</strong>
+            <p>Yes, you can nest <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements within each other.</p>
+        </li>
+        <li><strong>What happens when you click on a `<summary>` element?</strong>
+            <p>Clicking on a <code>&lt;summary&gt;</code> element will toggle the visibility of the content within the associated <code>&lt;details&gt;</code> element.</p>
+        </li>
+        <li><strong>How do you format blockquotes in CSS?</strong>
+            <p>You can style blockquotes using CSS properties like <code>border</code>, <code>margin</code>, and <code>padding</code>.</p>
+        </li>
+        <li><strong>Is it necessary to include the `<cite>` tag within a blockquote?</strong>
+            <p>It is not mandatory, but it is a good practice to include a <code>&lt;cite&gt;</code> tag to credit the source of the quote.</p>
+        </li>
+        <li><strong>Can the content inside `<details>` be styled with CSS?</strong>
+            <p>Yes, the content inside <code>&lt;details&gt;</code> can be styled using CSS just like any other HTML elements.</p>
+        </li>
+        <li><strong>What is the significance of using the `<summary>` tag in a details element?</strong>
+            <p>The <code>&lt;summary&gt;</code> tag provides context for what the hidden information is about, making it easier for users to understand.</p>
+        </li>
+    </ol>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, blanditiis? Eos sit consectetur ducimus sunt hic ex, nisi commodi quas omnis aspernatur quis id alias, iste, temporibus eum ab aliquam?</p>
+    <blockquote>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, blanditiis? Eos sit consectetur ducimus sunt hic ex, nisi commodi quas omnis aspernatur quis id alias, iste, temporibus eum ab aliquam?</p>
+    </blockquote>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, blanditiis? Eos sit consectetur ducimus sunt hic ex, nisi commodi quas omnis aspernatur quis id alias, iste, temporibus eum ab aliquam?</p>
+    
+    <details>
+        <summary>data</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti pariatur obcaecati, aperiam cum ipsum doloribus assumenda maxime veritatis maiores quia dolorem. Nisi quis, natus facere eveniet reiciendis explicabo commodi!</p>
+    </details>
+    <details>
+        <summary>Login form</summary>
+        <div>
+            <label for="">User Name : </label> <span>Testing</span>
+        </div>
+        <div>
+            <label for="">Password : </label> <span>*****</span>
+        </div>
+    </details>
+    <details>
+        <summary>Registration form</summary>
+        <div>
+            <label for="">User Name : </label> <span>Testing</span>
+        </div>
+        <div>
+            <label for="">Password : </label> <span>*****</span>
+        </div>
+        <div>
+            <label for="">Email : </label> <span>mail@mail.com</span>
+        </div>
+    </details>
+
+</body>
+</html> -->
+

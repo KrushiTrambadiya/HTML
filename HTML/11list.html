@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of List Tags in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #ccc;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Types of List Tags in HTML</h1>
+    
+    <h2>1. Unordered List (`<ul>`)</h2>
+    <p>An unordered list is used to group items without implying any specific order. Here’s an example:</p>
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;Apples&lt;/li&gt;
+    &lt;li&gt;Bananas&lt;/li&gt;
+    &lt;li&gt;Cherries&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+    </ul>
+
+    <h2>2. Ordered List (`<ol>`)</h2>
+    <p>An ordered list is used when the sequence of items is important. Here’s an example:</p>
+    <pre>
+&lt;ol&gt;
+    &lt;li&gt;Preheat the oven to 350°F.&lt;/li&gt;
+    &lt;li&gt;Mix flour and sugar in a bowl.&lt;/li&gt;
+    &lt;li&gt;Bake for 30 minutes.&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+    <ol>
+        <li>Preheat the oven to 350°F.</li>
+        <li>Mix flour and sugar in a bowl.</li>
+        <li>Bake for 30 minutes.</li>
+    </ol>
+
+    <h2>3. Description List (`<dl>`)</h2>
+    <p>A description list consists of terms and their associated descriptions. Here’s an example:</p>
+    <pre>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;A markup language for creating web pages.&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;A stylesheet language used to describe the presentation of a document.&lt;/dd&gt;
+&lt;/dl&gt;
+    </pre>
+    <dl>
+        <dt>HTML</dt>
+        <dd>A markup language for creating web pages.</dd>
+        <dt>CSS</dt>
+        <dd>A stylesheet language used to describe the presentation of a document.</dd>
+    </dl>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is an unordered list in HTML?</strong>
+            <p>An unordered list is a list of items that do not have a specific order, typically represented with bullet points.</p>
+        </li>
+        <li><strong>How do you create an ordered list in HTML?</strong>
+            <p>To create an ordered list, use the <code>&lt;ol&gt;</code> tag, and list items with <code>&lt;li&gt;</code> tags.</p>
+        </li>
+        <li><strong>What is the purpose of a description list?</strong>
+            <p>A description list is used to provide definitions or descriptions for a list of terms, consisting of <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> tags.</p>
+        </li>
+        <li><strong>Can you nest lists in HTML?</strong>
+            <p>Yes, you can nest lists by placing one list inside another using the respective <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, or <code>&lt;dl&gt;</code> tags.</p>
+        </li>
+        <li><strong>What tags are used for list items in an ordered list?</strong>
+            <p>List items in an ordered list are created using the <code>&lt;li&gt;</code> tag.</p>
+        </li>
+        <li><strong>How can you change the bullet style of an unordered list?</strong>
+            <p>You can change the bullet style using CSS properties like <code>list-style-type</code>.</p>
+        </li>
+        <li><strong>What is the default numbering for an ordered list?</strong>
+            <p>The default numbering for an ordered list is numeric (1, 2, 3, etc.).</p>
+        </li>
+        <li><strong>Can description lists be styled with CSS?</strong>
+            <p>Yes, description lists can be styled using CSS just like any other HTML elements.</p>
+        </li>
+        <li><strong>What is the HTML structure for a nested list?</strong>
+            <p>A nested list is structured by placing one list inside another.</p>
+            <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;
+        &lt;ul&gt;
+            &lt;li&gt;Subitem 1&lt;/li&gt;
+            &lt;li&gt;Subitem 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+        </li>
+        <li><strong>What tag is used to define a term in a description list?</strong>
+            <p>The <code>&lt;dt&gt;</code> tag is used to define a term in a description list.</p>
+        </li>
+    </ol>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>List</h2>
+
+    <li>list</li>
+    <li>list</li>
+    <li>list</li>
+    <li>list</li>
+    
+    <h3>Ordered List</h3>
+    <ol>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ol>
+    <ol type="A">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ol>
+    <ol type="I">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ol>
+    <ol type="I" start="100"> 
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ol>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    <ul type="disc">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    <ul type="circle">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    <ul type="square">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    <h3>Description Data List</h3>
+    <dl>
+        <dt>web dev lang</dt>
+        <dd>
+            <ol>
+                <li>PHP</li>
+                <li>JAVA</li>
+                <li>Python</li>
+                <li>.net</li>
+            </ol>
+        </dd>
+        <dt>UI/UX</dt>
+        <dd>
+            <ol>
+                <li>figma</li>
+                <li>XD</li>
+                <li>Photoshop</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Bootstrap</li>
+                <li>WP</li>
+            </ol>
+        </dd>
+
+    </dl>
+</body>
+</html> -->

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Tag Example</title>
+    <base href="https://www.example.com/" target="_blank">
+    <!-- <base href="file:///C:/xampp/htdocs/"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Base Tag in HTML</h1>
+    <p>The <code>&lt;base&gt;</code> tag specifies a base URL for relative URLs in the document. Below is an example:</p>
+
+    <p>
+        <a href="about.html">About Us</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="products.html">Products</a>
+    </p>
+
+    <h2>Practical Use</h2>
+    <p>Using the <code>&lt;base&gt;</code> tag is beneficial for:</p>
+    <ul>
+        <li>Simplifying link management when many links share the same base URL.</li>
+        <li>Preventing broken links when moving files to a different directory structure.</li>
+        <li>Setting a default target for links without needing to specify it for each link.</li>
+    </ul>
+    <h2>Relative Path</h2>
+    <img src="htmlcss.png" alt="">
+    <img src="../../htmlVScss.jpg" alt="">
+    <h2>Absolute Path</h2>
+    <img src="htmlVScss.jpg" alt="">
+    <img src="UI_UX/htmlVScss.jpg" alt="">
+    <img src="https://img-c.udemycdn.com/course/750x422/5396030_f3ee_5.jpg" alt="">
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the <code>&lt;base&gt;</code> tag in HTML?</strong>
+            <p>The <code>&lt;base&gt;</code> tag sets a base URL for all relative URLs in the document, allowing them to resolve against this base.</p>
+        </li>
+        <li><strong>Where should the <code>&lt;base&gt;</code> tag be placed in an HTML document?</strong>
+            <p>The <code>&lt;base&gt;</code> tag should be placed inside the <code>&lt;head&gt;</code> section.</p>
+        </li>
+        <li><strong>What attributes does the <code>&lt;base&gt;</code> tag support?</strong>
+            <p>The <code>&lt;base&gt;</code> tag supports the <code>href</code> and <code>target</code> attributes.</p>
+        </li>
+        <li><strong>How does the <code>href</code> attribute of the <code>&lt;base&gt;</code> tag work?</strong>
+            <p>The <code>href</code> attribute defines the base URL for all relative URLs in the document.</p>
+        </li>
+        <li><strong>What is the effect of using the <code>target</code> attribute in the <code>&lt;base&gt;</code> tag?</strong>
+            <p>The <code>target</code> attribute sets the default target for all links in the document. For example, <code>_blank</code> opens links in a new tab.</p>
+        </li>
+        <li><strong>Can you use multiple <code>&lt;base&gt;</code> tags in a single document?</strong>
+            <p>No, there should only be one <code>&lt;base&gt;</code> tag in a document. If multiple are defined, only the first one will be used.</p>
+        </li>
+        <li><strong>What happens if a relative URL is used without a <code>&lt;base&gt;</code> tag?</strong>
+            <p>Without a <code>&lt;base&gt;</code> tag, relative URLs are resolved based on the current document's location.</p>
+        </li>
+        <li><strong>Can the <code>&lt;base&gt;</code> tag be used with absolute URLs?</strong>
+            <p>Yes, the <code>&lt;base&gt;</code> tag is typically used with absolute URLs to define a consistent base for all relative links.</p>
+        </li>
+        <li><strong>What is an example of using a relative link with the <code>&lt;base&gt;</code> tag?</strong>
+            <p>If the base is set to <code>https://www.example.com/</code>, a link like <code>about.html</code> will resolve to <code>https://www.example.com/about.html</code>.</p>
+        </li>
+        <li><strong>Is it possible to change the base URL dynamically using JavaScript?</strong>
+            <p>Yes, you can manipulate the <code>&lt;base&gt;</code> tag using JavaScript to change the base URL dynamically.</p>
+        </li>
+    </ol>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <base href="file:///C:/xampp/htdocs/">
+</head>
+<body>
+
+    <h2>Relative Path</h2>
+    <img src="htmlcss.png" alt="">
+    <img src="../../htmlVScss.jpg" alt="">
+    <h2>Absolute Path</h2>
+    <img src="htmlVScss.jpg" alt="">
+    <img src="UI_UX/htmlVScss.jpg" alt="">
+    <img src="https://img-c.udemycdn.com/course/750x422/5396030_f3ee_5.jpg" alt="">
+
+    
+</body>
+</html> -->

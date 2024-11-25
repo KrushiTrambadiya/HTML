@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Attributes in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1>Global Attributes in HTML</h1>
+    
+    <h2>1. `id` Attribute</h2>
+    <p id="intro">Welcome to the tutorial on Global Attributes.</p>
+    
+    <h2>2. `class` Attribute</h2>
+    <p class="highlight">This paragraph is highlighted.</p>
+    
+    <h2>3. `style` Attribute</h2>
+    <p style="color: blue; font-size: 20px;">This text is styled with inline CSS.</p>
+    
+    <h2>4. `title` Attribute</h2>
+    <p title="This is a tooltip">Hover over this text to see the tooltip.</p>
+    
+    <h2>5. `data-*` Attributes</h2>
+    <div data-user-id="12345" data-role="admin">User Info</div>
+    
+    <h2>6. `tabindex` Attribute</h2>
+    <button tabindex="1">First Button</button>
+    <button tabindex="2">Second Button</button>
+    
+    <h2>7. `lang` Attribute</h2>
+    <p lang="en">This is an English paragraph.</p>
+    
+    <h2>8. `hidden` Attribute</h2>
+    <p hidden>This paragraph is hidden and not displayed.</p>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the `id` attribute?</strong>
+            <p>The <code>id</code> attribute provides a unique identifier for an HTML element, which can be used in CSS and JavaScript.</p>
+        </li>
+        <li><strong>How can the `class` attribute be useful?</strong>
+            <p>The <code>class</code> attribute allows multiple elements to share the same styling and can be used for JavaScript manipulation.</p>
+        </li>
+        <li><strong>What does the `style` attribute do?</strong>
+            <p>The <code>style</code> attribute applies inline CSS styles directly to an HTML element.</p>
+        </li>
+        <li><strong>How does the `title` attribute enhance usability?</strong>
+            <p>The <code>title</code> attribute provides additional information via tooltips when hovering over elements.</p>
+        </li>
+        <li><strong>What are `data-*` attributes used for?</strong>
+            <p>Custom <code>data-* </code> attributes store extra information about an element that can be accessed via JavaScript.</p>
+        </li>
+        <li><strong>How does `tabindex` affect navigation?</strong>
+            <p>The <code>tabindex</code> attribute specifies the tab order for keyboard navigation.</p>
+        </li>
+        <li><strong>What does the `lang` attribute specify?</strong>
+            <p>The <code>lang</code> attribute specifies the language of the element's content.</p>
+        </li>
+        <li><strong>What is the function of the `hidden` attribute?</strong>
+            <p>The <code>hidden</code> attribute indicates that the element is not relevant and should not be displayed.</p>
+        </li>
+        <li><strong>Can an element have multiple classes?</strong>
+            <p>Yes, an element can have multiple classes by separating them with spaces in the <code>class</code> attribute.</p>
+        </li>
+        <li><strong>Is it a good practice to use inline styles?</strong>
+            <p>While inline styles can be convenient, it's generally better to use external stylesheets for maintainability and consistency.</p>
+        </li>
+    </ol>
+
+
+    <!-- hju pn changes che -->
+    <div dir="ltr">left to right</div>
+    <div hidden dir="rtl">right to left</div>
+    <div name="" id="" class="">div</div>
+    <form action="" method="get">
+        <input type="hidden" value="123" itemid="" name="key" id="">
+        <input type="submit" value="save" name="" id="">
+    </form>
+    <label name="" id="" class="" for=""></label>
+    <input type="text" name="" id="" spellcheck="false" style="color: royalblue;" autofocus class="">
+    <!-- <input type="text" data-jay="" id="" tabindex="1" autofocus class=""> -->
+    <input type="text" data-jay="" id="" tabindex="1" autofocus class="">
+    <input type="text" data-bs-item="1" id="" autofocus class="">
+    <input type="text" dir="ltr" id="" autofocus class="">
+    <input type="text" dir="rtl" id="" autofocus class="">
+    <a href="https://www.google.com" title="press alt+k" accesskey="k">accesskey</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quibusdam voluptatem veniam natus provident facilis, pariatur maiores sit voluptate laboriosam ipsam ad quam vel amet voluptatibus, asperiores, aut ratione quis.</p>
+    <p contenteditable="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quibusdam voluptatem veniam natus provident facilis, pariatur maiores sit voluptate laboriosam ipsam ad quam vel amet voluptatibus, asperiores, aut ratione quis.</p>
+</body>
+</html>

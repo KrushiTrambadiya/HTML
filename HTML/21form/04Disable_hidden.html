@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend><h2>Edit user profile</h2></legend>
+        <!-- <form action="" method="get" novalidate> -->
+        <form action="" method="post" enctype="multipart/form-data">
+            <table border="1" align="center">
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="text" value="jayramin3012@gmail.com" disabled name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="">username</label></td>
+                    <td><input type="text" value="jayramin3012" readonly name="username" id="username">
+                        <input type="hidden" value="seckey45678912" name="seckey" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">First name</label></td>
+                    <td><input type="text" value="jay"  name="fname" id="fname">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name</label></td>
+                    <td>
+                        <input type="text" name="lname" id="lname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="file" accept="image/*" name="" id="" >
+                        <input type="submit"  name="btn" value="Save" id="btn"></td>
+                        <!-- <input type="submit" disabled name="btn" value="Save" id="btn"></td> -->
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <!-- <form id="example-form">
+        <input type="range" id="b" name="b" value="50" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+      </form> -->
+</body>
+</html>

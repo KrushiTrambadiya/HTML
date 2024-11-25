@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figcaption Example</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        figure {
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: inline-block;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        figcaption {
+            font-style: italic;
+            text-align: center;
+            margin-top: 8px;
+        }
+    </style> -->
+</head>
+<body>
+
+    <h1>Figcaption Tag in HTML</h1>
+    <p>The <code>&lt;figcaption&gt;</code> tag provides a caption for the content in a <code>&lt;figure&gt;</code>. Below is an example:</p>
+
+    <figure>
+        <img src="htmlcss.png" alt="">
+        <figcaption>this is the figure 56.6</figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Placeholder Image">
+        <figcaption>This is a placeholder image used for demonstration purposes.</figcaption>
+    </figure>
+
+    <h2>Practical Use</h2>
+    <p>Using the <code>&lt;figcaption&gt;</code> tag is beneficial for:</p>
+    <ul>
+        <li>Providing context and information about the media in the figure.</li>
+        <li>Improving accessibility by offering descriptive text for screen readers.</li>
+        <li>Enhancing the overall understanding of the content for users.</li>
+    </ul>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is the purpose of the <code>&lt;figcaption&gt;</code> tag in HTML?</strong>
+            <p>The <code>&lt;figcaption&gt;</code> tag is used to provide a caption or description for the content contained within a <code>&lt;figure&gt;</code> element.</p>
+        </li>
+        <li><strong>Where should the <code>&lt;figcaption&gt;</code> tag be placed in relation to the <code>&lt;figure&gt;</code> element?</strong>
+            <p>The <code>&lt;figcaption&gt;</code> tag should be placed directly inside the <code>&lt;figure&gt;</code> element, following the media content.</p>
+        </li>
+        <li><strong>Can there be multiple <code>&lt;figcaption&gt;</code> tags within a single <code>&lt;figure&gt;</code>?</strong>
+            <p>No, each <code>&lt;figure&gt;</code> element can only contain one <code>&lt;figcaption&gt;</code> tag.</p>
+        </li>
+        <li><strong>What types of content can be included inside a <code>&lt;figure&gt;</code> element?</strong>
+            <p>Content inside a <code>&lt;figure&gt;</code> can include images (<code>&lt;img&gt;</code>), videos (<code>&lt;video&gt;</code>), audio files (<code>&lt;audio&gt;</code>), illustrations, diagrams, and other types of media.</p>
+        </li>
+        <li><strong>How does the <code>&lt;figcaption&gt;</code> tag enhance accessibility?</strong>
+            <p>The <code>&lt;figcaption&gt;</code> tag provides descriptive text that can be read by screen readers, helping visually impaired users understand the content better.</p>
+        </li>
+        <li><strong>Is the <code>&lt;figcaption&gt;</code> tag required for the <code>&lt;figure&gt;</code> element to function?</strong>
+            <p>No, the <code>&lt;figcaption&gt;</code> tag is optional. A <code>&lt;figure&gt;</code> can exist without a caption, but including it adds value to the content.</p>
+        </li>
+        <li><strong>Can the <code>&lt;figcaption&gt;</code> tag contain any other HTML elements?</strong>
+            <p>Yes, the <code>&lt;figcaption&gt;</code> tag can contain other inline elements such as <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;a&gt;</code>, etc.</p>
+        </li>
+        <li><strong>What happens if you omit the <code>alt</code> attribute from the image in the <code>&lt;figure&gt;</code>?</strong>
+            <p>Omitting the <code>alt</code> attribute can lead to accessibility issues, as screen readers will not be able to provide a description of the image to users who cannot see it.</p>
+        </li>
+        <li><strong>How can the <code>&lt;figcaption&gt;</code> tag improve the user experience?</strong>
+            <p>The <code>&lt;figcaption&gt;</code> tag enhances the user experience by providing context and information that enriches the visual content, helping users understand the significance of the media.</p>
+        </li>
+        <li><strong>What styling options are available for the <code>&lt;figcaption&gt;</code> tag?</strong>
+            <p>The <code>&lt;figcaption&gt;</code> tag can be styled using CSS just like any other HTML element. Common styles include font size, color, and alignment.</p>
+        </li>
+    </ol>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="htmlcss.png" width="80px" alt=""> <br>
+    <label for="">label</label>
+    <p>something</p>
+    MySQL SQL
+MySQL SQL
+MySQL SELECT SELECT DISTINCT column1, column2, ... FROM table_name;
+MySQL WHERE SELECT column1, column2, ... FROM table_name WHERE condition;
+MySQL AND, OR, NOT SELECT column1, column2, ... FROM table_name WHERE condition1 AND/OR/NOT condition2 AND condition3 ...;
+MySQL ORDER BY SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;
+MySQL LIMIT SELECT column_name(s) FROM table_name WHERE condition LIMIT number;
+MySQL LIKE SELECT column1, column2, ... FROM table_name WHERE columnN LIKE pattern;
+MySQL Wildcards
+MySQL IN
+MySQL BETWEEN
+MySQL Aliases
+MySQL Joins
+MySQL INNER JOIN
+MySQL LEFT JOIN
+MySQL RIGHT JOIN
+MySQL CROSS JOIN
+MySQL Self Join
+MySQL UNION
+MySQL GROUP BY
+MySQL HAVING
+MySQL EXISTS
+MySQL ANY, ALL
+MySQL INSERT SELECT
+MySQL CASE
+MySQL Null Functions
+MySQL Comments
+MySQL Operators
+
+<figure>
+    <img src="htmlcss.png" width="80px" alt="">
+    <figcaption>figure 5.5 </figcaption>
+</figure>
+    <div>
+        <img src="htmlcss.png" width="80px" alt="">
+        <label for="">label</label>
+        <p>something</p>
+    </div>
+    <ol>
+        <li>
+            <img src="htmlcss.png" width="80px" alt="">
+            <label for="">label</label>
+            <p>something</p>
+        </li>
+    </ol>
+    
+</body>
+</html> -->
